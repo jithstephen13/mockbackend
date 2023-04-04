@@ -10,7 +10,9 @@ const Allroutes=express.Router()
 
 
 //  userLogin
-
+Allroutes.get("/",(request, response) => {
+    response.send("Welcome to  website");
+});
 Allroutes.post("/sigin",Register)
 Allroutes.post("/login",login)
 Allroutes.get("/getProfile",getProfile)
